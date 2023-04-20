@@ -4,7 +4,7 @@ This is a demo springproject for ai tools like gpt, stable diffusion
 
 ### use command `mvn spring-boot:run` to run the project
 
-![output](img/startprogram.jpg)
+![output](img/startprogram.png)
 
 ### call the stupid api with postman
 
