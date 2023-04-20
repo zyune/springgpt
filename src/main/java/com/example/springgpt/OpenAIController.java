@@ -17,7 +17,7 @@ public class OpenAIController {
     @PostMapping("/generate")
     public ResponseEntity<String> generateText(@RequestParam(value = "prompt") String prompt) {
         String url = "https://api.openai.com/v1/chat/completions";
-        String apiKey = "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";
+        String apiKey = System.getenv("OPENAI_API_KEY");
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.setBearerAuth(apiKey);
